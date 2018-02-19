@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+	
+
+  $( document ).ready(function() {
+    console.log( "ready!" );
+    var $wHeight = $(window).height();
+  $(".auto_height").css("height", $wHeight);
+
+
+   $("#test").click(function() {
+    var offset = 20; //Offset of 20px
+    console.log("hi");
+    $('html, body').animate({
+        scrollTop: $("#two").offset().top + offset
+    }, 2000);
+});
+});
+
+ 
+</script>
+
+<style type="text/css">
+  nav.navbar.navbar-expand-sm.bg-dark.navbar-dark {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.container-fluid {
+    padding-top: 70px;
+}
+</style>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="#one">Logo</a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#about">Link 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contact">Link 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#map">Link 3</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" id="test">Link 4</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container-fluid">
+  <h3>Brand / Logo</h3>
+  <p>The .navbar-brand class is used to highlight the brand/logo/project name of your page.</p>
+</div>
+
+<div class=" auto_height" id="about">
+    <div class="col-md-4 ">
+      <div class="thumbnail">
+        <a href="https://www.w3schools.com/w3images/lights.jpg" target="_blank">
+          <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+<div class=" auto_height" id="contact">
+    <div class="col-md-4 ">
+      <div class="thumbnail">
+        <a href="https://www.w3schools.com/w3images/nature.jpg" target="_blank">
+          <img src="https://www.w3schools.com/w3images/nature.jpg" alt="Nature" style="width:100%">
+          <div class="caption">
+            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+<div class=" auto_height" id="map">
+    <div class="col-md-4 ">
+      <div class="thumbnail">
+        <a href="https://www.w3schools.com/w3images/fjords.jpg" target="_blank">
+          <img src="https://www.w3schools.com/w3images/fjords.jpg" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+<script src="allscript.js"></script>
+</html>
